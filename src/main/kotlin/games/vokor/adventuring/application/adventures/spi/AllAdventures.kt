@@ -1,3 +1,7 @@
 package games.vokor.adventuring.application.adventures.spi
 
-interface AllAdventures
+import games.vokor.adventuring.domain.adventures.Adventure
+
+interface AllAdventures {
+    fun create(adventure: Adventure)
+}
